@@ -49,7 +49,7 @@ até o comando `sudo apt upgrade` (inclusive) na seção `Install ROS 2 packages
 Esse processo vai demorar, mas geralmente não precisa de supervisão humana.
 3. Instale o `ros-dev-tools` presente no guia.
 
-Não é necessário prosseguir no guia de instalação. 
+Depois disso, não é necessário prosseguir no guia de instalação. 
 
 ### Setup do ROS
 
