@@ -2,7 +2,7 @@
 
 ## Configuração da toolchain
 
-Os passos de instalação aqui descritos são voltados e foram testados em um sistema Ubuntu 22.04 LTE.
+Os passos de instalação aqui descritos são voltados e foram testados em um sistema Ubuntu 22.04 LTS.
 A documentação oficial recomenda que esse seja o sistema utilizado.
 
 ### Aviso
@@ -44,7 +44,7 @@ Certifique-se de que a versão de `python3` resolvido pelo `PATH` é o Python 3.
 ### Instalar o ROS 2 Humble
 
 1. Siga os passos contidos na [documentação oficial](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html),
-até o comando `sudo apt upgrade` na seção `Install ROS 2 packages`.
+até o comando `sudo apt upgrade` (inclusive) na seção `Install ROS 2 packages`.
 2. Ainda no guia, instale a versão `Desktop Install (Recommended)`. **Não** instale o `ROS-Base Install (Bare Bones)`.
 Esse processo vai demorar, mas geralmente não precisa de supervisão humana.
 3. Instale o `ros-dev-tools` presente no guia.
