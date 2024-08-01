@@ -253,7 +253,7 @@ A melhor forma de fazer isso é utilizando o comando `remodel`.
 
 É gerado pelo processo de build.
 O script precisa ser executado (`source install/setup.bash`, caso seu terminal seja o `bash`) em todo novo terminal que precisa interagir com programas vinculados ao projeto, como por exemplo o `rviz`.
-As funções [`setup`](#setup), [`build`](#build) e [`buildall`](#buildall) do script [`macros.sh`](./macros.bash) executam-no automaticamente.
+As funções [`setup`](#setup), [`build`](#build) e [`buildall`](#buildall) do script [`macros.bash`](./macros.bash) executam-no automaticamente.
 
 ### Outros arquivos gerados automaticamente
 
