@@ -118,6 +118,8 @@ Em seguida, execute o seguinte *script* para instalar o PX4, dentro do diretóri
 bash Tools/setup/ubuntu.sh
 ```
 
+É normal aparecerem vários *warnings* no processo de instalação.
+
 ### Testar a instalação
 
 Caso nenhum erro ocorra, vá para o local em que colocou este repositório e execute os comandos:
