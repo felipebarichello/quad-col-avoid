@@ -124,7 +124,7 @@ bash Tools/setup/ubuntu.sh
 
 Caso nenhum erro ocorra, vá para o local em que colocou este repositório e execute os comandos:
 ```sh
-source ./macros.sh
+source ./macros.bash
 setros && buildall && sim
 ```
 e verifique se o comportamento é compatível com a descrição a seguir **(não feche as janelas antes de ler a seção [# Fechar os programas](#fechar-os-programas)**:
