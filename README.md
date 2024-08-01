@@ -5,7 +5,9 @@
 Os passos de instalação aqui descritos são voltados e foram testados em um sistema Ubuntu 22.04 LTS.
 A documentação oficial recomenda que esse seja o sistema utilizado.
 
-### Aviso
+### Avisos
+
+A qualquer momento que haja um problema, certifique-se de que a seção [**# Problemas comuns**](#problemas-comuns) não cobre o seu erro como um dos primeiros passos de troubleshooting.
 
 Recomenda-se a utilização de um sistema limpo e destrutível para o desenvolvimento do projeto, já que alguns passos de instalação neste guia podem ser destrutivos.
 Uma alternativa é utilizar uma máquina virual, mas a divisão de recursos pode ser um problema.
@@ -155,7 +157,7 @@ Caso não haja nenhum erro, prossiga para a seção [**# Estrutura do projeto**]
 
 O repositório PX4-Autopilot-ColAvoid foi baixado sem a opção `--recursive`.
 Execute `git submodule update --init --recursive` nele para corrigir o problema.
-Então volte a partir a partir do ponto após o clone em [**# Instalar o PX4-Autopilot**](#instalar-o-px4-autopilot)
+Então volte a partir do ponto após o clone em [**# Instalar o PX4-Autopilot**](#instalar-o-px4-autopilot)
 
 ### Erro ao iniciar o PX4
 
