@@ -105,7 +105,7 @@ Então este repositório utiliza uma versão customizada do repositório
 Baixar o repositório personalizado do PX4:
 ```sh
 cd
-git clone https://github.com/felipebarichello/PX4-Autopilot-ColAvoid.git
+git clone https://github.com/felipebarichello/PX4-Autopilot-ColAvoid.git --recursive
 ```
 
 Ele deve ser instalado na home (ou deve conter um *symlink* lá) pois o *script* de *launch* presume isso e não funcionará caso contrário.
@@ -150,6 +150,11 @@ Veja a seção [**# Problemas comuns > Erro na abertura do Gazebo**](#erro-na-ab
 Caso não haja nenhum erro, prossiga para a seção [**# Estrutura do projeto**](#estrutura-do-projeto) para entender a estrutura do projeto.
 
 ## Problemas comuns
+
+### Ao tentar simular, erros em vermelho acusando algo no CMakeLists.txt
+
+O repositório PX4-Autopilot-ColAvoid foi baixado sem a opção `--recursive`.
+Execute `git submodule update --init --recursive` nele para corrigir o problema.
 
 ### Erro ao iniciar o PX4
 
