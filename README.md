@@ -155,6 +155,7 @@ Caso não haja nenhum erro, prossiga para a seção [**# Estrutura do projeto**]
 
 O repositório PX4-Autopilot-ColAvoid foi baixado sem a opção `--recursive`.
 Execute `git submodule update --init --recursive` nele para corrigir o problema.
+Então volte a partir a partir do ponto após o clone em [**# Instalar o PX4-Autopilot**](#instalar-o-px4-autopilot)
 
 ### Erro ao iniciar o PX4
 
