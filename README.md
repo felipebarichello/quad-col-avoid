@@ -155,9 +155,13 @@ Caso não haja nenhum erro, prossiga para a seção [**# Estrutura do projeto**]
 
 ### Ao tentar simular, erros em vermelho acusando algo no CMakeLists.txt
 
-O repositório PX4-Autopilot-ColAvoid foi baixado sem a opção `--recursive`.
-Execute `git submodule update --init --recursive` nele para corrigir o problema.
-Então volte a partir do ponto após o clone em [**# Instalar o PX4-Autopilot**](#instalar-o-px4-autopilot)
+É um problema extremamente gambiarrístico causado pelo repositório oficial do Github.
+Para solucionar o problema, deve-se criar uma *tag* de *commit* no *commit* do repositório do `PX4-Autopilot-ColAvoid`:
+```sh
+git tag v1.14.0-dev
+```
+Daí para frente, lembre-se de, em todo novo *commit* do repositório, adicionar a *tag* e fazer um `git push --all` em vez de um `git push` ordinário.
+Também pode-se fazer um `git push --tags` para fazer o *push* apenas das *tags*
 
 ### Erro ao iniciar o PX4
 
