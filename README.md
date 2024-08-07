@@ -160,6 +160,7 @@ Caso não haja nenhum erro, prossiga para a seção [**# Estrutura do projeto**]
 
 Este erro se caracteriza por uma mensagem de erro em vermelho no terminal que executa o SITL
 (ver [**# Testar a instalação**](#testar-a-instalação) para identificar esse terminal).
+O erro diz "Service call timed out. Check GZ_SIM_RESOURCE_PATH is set correctly.".
 Pode acontecer toda vez que a simulação é executada pela primeira vez.
 Deve ser resolvido fechando todos os processos e executando novamente o comando [`sim`](#sim).
 
