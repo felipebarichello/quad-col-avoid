@@ -124,12 +124,15 @@ bash Tools/setup/ubuntu.sh
 
 ### Testar a instalação
 
+Antes de prosseguir, perceba que atualmente, aparentemente para todos,
+está ocorrendo um erro na primeira vez que a simulação é executada (ver [**# Problemas comuns > O simulador abre mas está vazio**](#o-simulador-abre-mas-está-vazio))
+
 Caso nenhum erro ocorra, vá para o local em que colocou este repositório e execute os comandos:
 ```sh
 source ./macros.bash
 setros && buildall && sim
 ```
-e verifique se o comportamento é compatível com a descrição a seguir **(não feche as janelas antes de ler a seção [# Fechar os programas](#fechar-os-programas)**:
+e verifique se o comportamento é compatível com a descrição a seguir **(não feche as janelas antes de ler a seção [**# Fechar os programas**](#fechar-os-programas)**:
 
 - Duas novas janelas de terminal são abertas; se antes só havia uma aberta, agora há três:
     1. **PX4 Shell**: A que já estava aberta, agora com outputs no estilo `[velocity_control-4] [INFO] [1710362381.891866260] [px4_offboard.velocity]: FlightCheck: True`
@@ -153,6 +156,13 @@ Caso não haja nenhum erro, prossiga para a seção [**# Estrutura do projeto**]
 
 ## Problemas comuns
 
+### O simulador abre mas está vazio
+
+Este erro se caracteriza por uma mensagem de erro em vermelho no terminal que executa o SITL
+(ver [**# Testar a instalação**](#testar-a-instalação) para identificar esse terminal).
+Pode acontecer toda vez que a simulação é executada pela primeira vez.
+Deve ser resolvido fechando todos os processos e executando novamente o comando [`sim`](#sim).
+
 ### Ao tentar simular, erros em vermelho acusando algo no CMakeLists.txt
 
 É um problema extremamente gambiarrístico causado pelo repositório oficial do Github.
@@ -162,13 +172,6 @@ git tag v1.14.0-dev
 ```
 Daí para frente, lembre-se de, em todo novo *commit* do repositório, adicionar a *tag* e fazer um `git push --all` em vez de um `git push` ordinário.
 Também pode-se fazer um `git push --tags` para fazer o *push* apenas das *tags*
-
-### Erro ao iniciar o PX4
-
-Esse erro se caracteriza por uma mensagem de erro em vermelho no terminal que executa o SITL
-(ver [**# Testar a instalação**](#testar-a-instalação) para identificar esse terminal).
-Pode acontecer toda vez que a simulação é executada pela primeira vez.
-Deve ser resolvido fechando todos os processos e executando novamente o comando [`sim`](#sim).
 
 ### ninja: error: unknown target
 
