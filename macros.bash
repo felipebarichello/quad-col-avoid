@@ -15,7 +15,7 @@ function build() {
 }
 
 function remodel() {
-    cp -r models/* ~/PX4-Autopilot/Tools/simulation/gz/models/
+    cp -r models/* ~/PX4-Autopilot-ColAvoid/Tools/simulation/gz/models/
 }
 
 function sim() {
